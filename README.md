@@ -25,4 +25,6 @@ Any passing test that requires a mock will fail after an incorrectly mocked test
 
 ## Duplication Issue
 
-We attempted to duplicate this bug on a new react app but could not. This duplication attempt can be found in the "passing" branch. In this branch both tests pass, which is also unexpected behavior because we expect the first test to fail with a bad mock.
+We attempted to duplicate this bug on a new react app but could not. This duplication attempt can be found here: "https://github.com/pham-andrew/rtl-mocks-bug-duplication". In this repository both tests pass, which is also unexpected behavior because we expect the first test to fail with a bad mock.
+
+We are unsure of the exact differences between these two repos, this repo has many more dependancies and may contain older versions since it was extracted from a project while the new react app was just created.
