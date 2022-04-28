@@ -5,13 +5,12 @@ import Page2 from "./Page2";
 
 beforeEach(() => fetchMock.resetMocks());
 
-test("given incorrect mocks", async () => {
+test("given incorrect mock", async () => {
     fetchMock.mockResponseOnce(JSON.stringify({}));
     render(<Page1 />);
-    expect(screen.queryByText("hello world")).not.toBeInTheDocument();
 });
 
-test("passes if it is the only one run", async () => {
+test("given correct mock, passes solo", async () => {
     fetchMock.mockResponseOnce(JSON.stringify("hello world"));
     render(<Page2 />);
     await waitFor(() => {

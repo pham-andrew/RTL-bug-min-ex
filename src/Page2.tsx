@@ -1,4 +1,4 @@
-import React, { FC, useEffect, useState, useContext } from "react";
+import React, { FC, useEffect, useState } from "react";
 
 const Page2: FC = () => {
     const [state, setState] = useState("");
