@@ -21,6 +21,6 @@ When we run the test suite containing both tests we get the following result:
 
 This is the opposite of what we expect, since the first test has incorrect mocks and errors its own, it should not pass with another test in the suite. The second test that passes on its own should not be marked as failing when it comes after a failing test.
 
-## Duplication Issues
+## Current Investigation Status
 
-If the three files of interest are copied into a new react app, both tests will pass (while the first test is given an incorrect mock, there is no expect so it does not fail). Therefore the issue likely lies somewhere in the specific configuration of this app.
+Currently believed to be an issue with one of the packages. A new react app with more updated packages does not have this issue.
