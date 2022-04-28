@@ -1,4 +1,4 @@
-# React Testing Library Bug Minimum Code Example
+# React Testing Library Mocks Bug Demonstration
 
 ## Instructions
 
