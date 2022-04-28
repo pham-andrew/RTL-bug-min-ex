@@ -2,7 +2,7 @@
 
 ## Instructions
 
-This repo duplicates a bug found in React Testing Library where an incorrect mock may cause a passing test to mark as failing. This bug can be seen by pulling the "master" branch and running "npm run test".
+This repo demonstrates a bug found in React Testing Library where an incorrect mock may cause a passing test to mark as failing. This bug can be seen by pulling the "master" branch and running "npm run test".
 
 ## File Structure
 
@@ -27,4 +27,4 @@ Any passing test that requires a mock will fail after an incorrectly mocked test
 
 We attempted to duplicate this bug on a new react app but could not. This duplication attempt can be found here: "https://github.com/pham-andrew/rtl-mocks-bug-duplication". In this repository both tests pass, which is also unexpected behavior because we expect the first test to fail with a bad mock.
 
-We are unsure of the exact differences between these two repos, this repo has many more dependancies and may contain older versions since it was extracted from a project while the new react app was just created.
+We are unsure of the exact differences between these two repos, this repo has many more dependencies and may contain older versions since it was extracted from a project while the new react app was just created.
