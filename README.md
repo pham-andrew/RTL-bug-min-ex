@@ -21,6 +21,6 @@ When we run the test suite containing both tests we get the following result:
 
 This is the opposite of what we expect, since the first test has incorrect mocks and errors its own, it should not pass with another test in the suite. The second test that passes on its own should not be marked as failing when it comes after a failing test.
 
-## Current Investigation Status
+## Solution
 
-Currently believed to be an issue with one of the packages. A new react app with more updated packages does not have this issue.
+This is an issue with testing library react version 11.2.7. Updating "@testing-library/react" fixes the issue (we used 13.1.1). Updating "@testing-library/react" requires "react" and "react-dom" to be updated as well (we used 18.1.0). In our repo, replacing package.json with the contents of package.updated.json fixes the issue.
