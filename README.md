@@ -23,4 +23,4 @@ This is the opposite of what we expect, since the first test has incorrect mocks
 
 ## Solution
 
-This is an issue with testing library react version 11.2.7. Updating "@testing-library/react" fixes the issue (we used 13.1.1). Updating "@testing-library/react" requires "react" and "react-dom" to be updated as well (we used 18.1.0). In this repo, replacing package.json with the contents of package.updated.json, deleting package-lock.json and node_modeules, then "npm install", fixes the issue.
+This is an issue with testing library react version 11.2.7. Updating "@testing-library/react" fixes the issue (we updated to 13.1.1). Updating "@testing-library/react" requires "react" and "react-dom" to be updated as well (we updated to 18.1.0). In this repo, replacing package.json with the contents of package.updated.json, deleting package-lock.json and node_modeules, then "npm install", fixes the issue.
